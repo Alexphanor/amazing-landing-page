@@ -305,19 +305,64 @@ header{
 	display: grid;
 	grid-template-columns: 25% 25% 25% 25%;
 	overflow: hidden;
-	margin: 0 auto;
+	margin: 0 auto 125px auto;
 }
 
-.portfolio-grid-overlay{
-	margin-bottom: -250px;
+.portfolio-grid-item{
 	position: relative;
-	top: -295px;
-	opacity: 0;
-	transition: .3s;
 }
 
-.portfolio-grid-overlay:hover{
+.portfolio-border-overlay {
+	height: 257px;
+	width: 230px;
+	border: solid 20px #4e3391;
+	position: absolute;
+	left: 30px;
+	top: 25px;
+	opacity: 0;
+	transition: 0.3s;
+}
+
+.portfolio-button1-overlay {
+	height: 40px;
+	width: 40px;
+	border: white solid 2px;
+	position: absolute;
+	left: 50px;
+	top: 90px;        
+}
+
+.portfolio-button2-overlay {
+	height: 40px;
+	width: 40px;
+	background-color: #ed145b;
+	position: absolute;
+	left: 110px;
+	top: 90px;
+	
+}
+
+.portfolio-button1-overlay i {
+	color: white;  
+	margin-top: 25%;
+}
+
+.portfolio-button2-overlay i {
+	color: white; 
+	margin-top: 25%;
+}
+
+.portfolio-image {
+	height: 313px;
+	width: 278px;
+	padding: 0;
+	margin: 0;
+	width: auto;
+}
+
+.portfolio-image:hover > .portfolio-border-overlay{
 	opacity: 1;
+	display: block;
 }
 
 /* ACHIEVEMENTS SECTION */
@@ -416,6 +461,7 @@ textarea {
 
 .contact button:hover {
 	opacity: .85;
+	cursor: pointer;
 }
 
 .location {
@@ -487,7 +533,6 @@ footer{
 }
 
 .footer-sm {
-	display: inline;
 	float: left;
 }
 
