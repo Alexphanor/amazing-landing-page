@@ -125,6 +125,18 @@ li a:hover {
 	margin-top: 180px;
 }
 
+.carrousel {
+	height: 65px;
+}
+
+.slides {
+	margin: auto;
+	height: 0px;
+	text-align: center;
+	color: white;
+}
+
+
 .header-cta a {
 	text-decoration: none;
 	color: white;
