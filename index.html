@@ -5,10 +5,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Amazing Landing Page</title>
+  <link rel="stylesheet" href="css/animate.css">
   <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet">  
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
-  <link rel="stylesheet" href="css/animate.css">
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="css/media queries.css">
 
 </head>
 <body>
@@ -18,6 +19,7 @@
           <img src="/img/amazing_logo.png" alt="Amazing">
         </div>
         <nav class="header-nav" role="navigation">
+          <a href="#" class="burger-nav"></a>
           <ul>
             <li><a href="#">home</a></li>
             <li><a href="#">service</a></li>
@@ -26,7 +28,6 @@
           </ul>
         </nav>
         <div class="header-cta">
-          <!-- <h1 class="headline">Have an amazing business meeting</h1>  -->
           <div class="carrousel">
             <h1 class="slides"> Have an amazing business meeting</h1>
             <h1 class="slides"> We scale with you! </h1>
@@ -44,38 +45,41 @@
         <div class="services-title">
           <img src="img/services_title.png" alt="What We Do">
         </div>
-        <div class="services-icon-list">
-          <ul>
-            <li class="icon-list-item wow fadeInUp" data-wow-delay= 1s>
-              <img class="services-icon" src="img/postal-card_icon.png">
-            </li>
-            <li class="icon-list-item wow fadeInUp" data-wow-delay= 1.3s>
-              <img class="services-icon" src="img/screen_icon.png">
-            </li>
-            <li class="icon-list-item wow fadeInUp" data-wow-delay= 1.6s>
-              <img class="services-icon" src="img/photo_icon.png">
-            </li>
-            <li class="icon-list-item wow fadeInUp" data-wow-delay= 1.9s>
-              <img class="services-icon" src="img/device_icon.png">
-            </li>
-          </ul>
-        </div>
-        <div class="services-list wow fadeInRight" data-wow-duration= 1.5s>
-          <div class="services-list-item">
-            <h3 class="services-list-title">Web Design</h3>
-            <p class="services-list-body">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Id doloremque debitis vitae recusandae eos ut eum vero consequuntur culpa corrupti.</p>
+        <h2 class="services-title-sm services2-cta-title"> What We Do</h2>
+        <div class="services-body-sm">
+          <div class="services-icon-list">
+            <ul class="wow fadeInLeft" data-wow-delay="0.5s" >
+              <li class="icon-list-item">
+                <img class="services-icon" src="img/postal-card_icon.png">
+              </li>
+              <li class="icon-list-item fadeInUp">
+                <img class="services-icon" src="img/screen_icon.png">
+              </li>
+              <li class="icon-list-item fadeInUp">
+                <img class="services-icon" src="img/photo_icon.png">
+              </li>
+              <li class="icon-list-item fadeInUp">
+                <img class="services-icon" src="img/device_icon.png">
+              </li>
+            </ul>
           </div>
-          <div class="services-list-item">
-            <h3 class="services-list-title">UI/UX Design</h3>
-            <p class="services-list-body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis minus, adipisci nisi explicabo maiores aliquid reprehenderit dolorem! Quisquam, similique nam?</p>
-          </div>
-          <div class="services-list-item">
-            <h3 class="services-list-title">Photography</h3>
-            <p class="services-list-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa odit possimus dolorem doloribus molestiae praesentium optio nobis deleniti eaque corporis.</p>
-          </div>
-          <div class="services-list-item">
-            <h3 class="services-list-title">App Development</h3>
-            <p class="services-list-body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt dolorem voluptates cumque ut magnam rem numquam quam perspiciatis nihil ad!`</p>
+          <div class="services-list wow fadeInRight" >
+            <div class="services-list-item">
+              <h3 class="services-list-title">Web Design</h3>
+              <p class="services-list-body">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Id doloremque debitis vitae recusandae eos ut eum vero consequuntur culpa corrupti.</p>
+            </div>
+            <div class="services-list-item">
+              <h3 class="services-list-title">UI/UX Design</h3>
+              <p class="services-list-body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis minus, adipisci nisi explicabo maiores aliquid reprehenderit dolorem! Quisquam, similique nam?</p>
+            </div>
+            <div class="services-list-item">
+              <h3 class="services-list-title">Photography</h3>
+              <p class="services-list-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa odit possimus dolorem doloribus molestiae praesentium optio nobis deleniti eaque corporis.</p>
+            </div>
+            <div class="services-list-item">
+              <h3 class="services-list-title">App Development</h3>
+              <p class="services-list-body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt dolorem voluptates cumque ut magnam rem numquam quam perspiciatis nihil ad!`</p>
+            </div>
           </div>
         </div>
       </div>
@@ -241,12 +245,12 @@
           </div>
           <div class="footer-sm">
             <ul class="footer-sm-icon-list">
-              <a href="#"><li class="footer-sm-icon-item"><img src="img/social_fb_icon.png"></li></a>
-              <a href="#"><li class="footer-sm-icon-item"><img src="img/social_tw_icon.png"></li></a>
-              <a href="#"><li class="footer-sm-icon-item"><img src="img/social_googleplus_icon.png"></li></a>
-              <a href="#"><li class="footer-sm-icon-item"><img src="img/social_ig_icon.png"></li></a>
-              <a href="#"><li class="footer-sm-icon-item"><img src="img/social_be_icon.png"></li></a>
-              <a href="#"><li class="footer-sm-icon-item"><img src="img/social_dr_icon.png"></li></a>
+              <a href="#"><li class="footer-sm-icon-item wow rotateIn"><img src="img/social_fb_icon.png"></li></a>
+              <a href="#"><li class="footer-sm-icon-item wow rotateIn"><img src="img/social_tw_icon.png"></li></a>
+              <a href="#"><li class="footer-sm-icon-item wow rotateIn"><img src="img/social_googleplus_icon.png"></li></a>
+              <a href="#"><li class="footer-sm-icon-item wow rotateIn"><img src="img/social_ig_icon.png"></li></a>
+              <a href="#"><li class="footer-sm-icon-item wow rotateIn"><img src="img/social_be_icon.png"></li></a>
+              <a href="#"><li class="footer-sm-icon-item wow rotateIn"><img src="img/social_dr_icon.png"></li></a>
             </ul>
           </div>
         </div>

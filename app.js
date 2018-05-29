@@ -1,4 +1,13 @@
 $(document).ready(function(){
+  // Wow animations
+  new WOW().init();
+
+  // burger nav 
+  $(".burger-nav").on("click", function(){
+    $(".container nav ul").toggleClass("open");
+  });
+  
+  // text slider
   $(function(){    
     $('.carrousel .slides:gt(0)').hide();
     setInterval(function(){
@@ -6,5 +15,5 @@ $(document).ready(function(){
       .end().appendTo('.carrousel');
   }, 7000);    
   });
-   new WOW().init();
+
 });
